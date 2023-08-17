@@ -2,6 +2,7 @@ from flask import Flask, jsonify, send_file, make_response
 import os
 
 from tf2_data.weapons.scout_weapons import ScoutWeapons
+
 app = Flask(__name__)
 
 absolute_path = os.path.dirname(__file__)

@@ -85,7 +85,7 @@ def atomizer():
 def wrap_assassin():
     return {"name": "Wrap Assassin", 'class': '', 'type': 'Craft', 'image': '/w/images/thumb/6/6b/Item_icon_Wrap_Assassin.png/100px-Item_icon_Wrap_Assassin.png'}
  
-|||||||||||||||||||||||||||||||| SOLDIER ||||||||||||||||||||||||||
+|||||||||||||||||||||||||||||||| SOLDIER ||||||||||||||||||||||||||||||||||||||
 
 def rocket_launcher():
     return {"name": "Rocket Launcher", 'class': '', 'type': 'Stock', 'image': '/w/images/thumb/f/fe/Item_icon_Rocket_Launcher.png/100px-Item_icon_Rocket_Launcher.png'}
@@ -164,6 +164,8 @@ def market_gardener():
 
 def escape_plan():
     return {"name": "Escape Plan", 'class': '', 'type': 'Craft', 'image': '/w/images/thumb/0/0c/Item_icon_Escape_Plan.png/100px-Item_icon_Escape_Plan.png'}
+
+|||||||||||||||||||||||||||||||||||||||||||||PYRO|||||||||||||||||||||||||||||||||
 
 def flame_thrower():
     return {"name": "Flame_Thrower", 'class': '', 'type': 'Stock', 'image': '/w/images/thumb/e/ec/Item_icon_Flame_Thrower.png/100px-Item_icon_Flame_Thrower.png'}
@@ -249,6 +251,8 @@ def neon_annihilator():
 def hot_hand():
     return {"name": "Hot Hand", 'class': '', 'type': 'Contract', 'image': '/w/images/thumb/f/f6/Item_icon_Hot_Hand.png/100px-Item_icon_Hot_Hand.png'}
 
+||||||||||||||||||||||||||||||||||DEMOMAN|||||||||||||||||||||||||||||||||||
+
 def grenade_launcher():
     return {"name": "Grenade Launcher", 'class': '', 'type': 'Stock', 'image': '/w/images/thumb/e/e6/Item_icon_Grenade_Launcher.png/100px-Item_icon_Grenade_Launcher.png'}
 
@@ -324,6 +328,7 @@ def half_zatoichi():
 def persian_persuader():
     return {"name": "Persian Persuader", 'class': '', 'type': 'Craft', 'image': '/w/images/thumb/9/98/Item_icon_Persian_Persuader.png/100px-Item_icon_Persian_Persuader.png'}
 
+||||||||||||||||||||||||||||||||||| HEAVY ||||||||||||||||||||||||||||||||||||
 def minigun():
     return {"name": "Minigun", 'class': '', 'type': 'Stock', 'image': '/w/images/thumb/a/a7/Item_icon_Minigun.png/100px-Item_icon_Minigun.png'}
 
@@ -395,6 +400,8 @@ def eviction_notice():
 
 def holiday_punch():
     return {"name": "Holiday Punch", 'class': '', 'type': 'Craft', 'image': '/w/images/thumb/5/54/Item_icon_Holiday_Punch.png/100px-Item_icon_Holiday_Punch.png'}
+
+||||||||||||||||||||||||||||||||| ENGINEER ||||||||||||||||||||||||||||||||||||
 
 def shotgun():
     return {"name": "Shotgun", 'class': '', 'type': 'Stock', 'image': '/w/images/thumb/5/5f/Item_icon_Shotgun.png/100px-Item_icon_Shotgun.png'}
