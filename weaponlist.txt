@@ -463,6 +463,8 @@ def pda():
 def pda():
     return {"name": "PDA", 'class': '', 'type': 'StockPDA 2', 'image': '/w/images/thumb/2/26/Item_icon_PDA_Destroy.png/100px-Item_icon_PDA_Destroy.png'}
 
+|||||||||||||||||||||||||||||||||||||||| MEDIC ||||||||||||||||||||||||||||
+
 def syringe_gun():
     return {"name": "Syringe Gun", 'class': '', 'type': 'Stock', 'image': '/w/images/thumb/c/c4/Item_icon_Syringe_Gun.png/100px-Item_icon_Syringe_Gun.png'}
 
@@ -501,6 +503,8 @@ def amputator():
 
 def solemn_vow():
     return {"name": "Solemn Vow", 'class': '', 'type': 'Craft', 'image': '/w/images/thumb/d/db/Item_icon_Solemn_Vow.png/100px-Item_icon_Solemn_Vow.png'}
+
+|||||||||||||||||||||||||||||||||||||| SNIPER |||||||||||||||||||||||||||||||||||
 
 def sniper_rifle():
     return {"name": "Sniper Rifle", 'class': '', 'type': 'Stock', 'image': '/w/images/thumb/a/a1/Item_icon_Sniper_Rifle.png/100px-Item_icon_Sniper_Rifle.png'}
@@ -564,6 +568,8 @@ def bushwacka():
 
 def shahanshah():
     return {"name": "Shahanshah", 'class': '', 'type': 'Craft', 'image': '/w/images/thumb/8/8d/Item_icon_Shahanshah.png/100px-Item_icon_Shahanshah.png'}
+
+|||||||||||||||||||||||||||||||||||||||| SPY |||||||||||||||||||||||||||||||||||||
 
 def revolver():
     return {"name": "Revolver", 'class': '', 'type': 'Stock', 'image': '/w/images/thumb/1/1f/Item_icon_Revolver.png/100px-Item_icon_Revolver.png'}
