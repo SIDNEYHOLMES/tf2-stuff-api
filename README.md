@@ -5,12 +5,19 @@ still working on it you know so
 
 ||||| stuff not added yet |||||
 
-everything
+  character images
+  character lore/info
+  images for weapons
+  everything cosmetic
 
+
+||||| STUFF ADDED!!! |||||||
+  all class weapon data (still needs image data to not be weird)
+  
 
 |||| tech stack |||
 
 Python
 flask
-termcolor
+
 
