@@ -26,6 +26,16 @@ def get_weapon(weapon_name, class_name): ## takes weapon name and class name fro
 
 
 ## ||||||||||| CHARACTER STUFF ||||||||||||||||||
+@app.route('/character/mercs/<class_name>', method=['GET'])
+def get_class_info(class_name):
+    data = {
+        'name': 'jermey',
+        'class_name': 'scout',
+        'fav_food': 'bucket of fried chiken',
+        'class_data': {'boring class data like speed and stuff'},
+        'lore': '/lore/mercs/scout'       
+    }
+    return data
 
 
 ##  ||||||||||||||  IMAGES ||||||||||||||||

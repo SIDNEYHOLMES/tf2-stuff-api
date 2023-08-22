@@ -9,7 +9,7 @@ still working on it you know so
   character lore/info
   images for weapons
   everything cosmetic
-
+  documentation
 
 ||||| STUFF ADDED!!! |||||||
   all class weapon data (still needs image data to not be weird)
