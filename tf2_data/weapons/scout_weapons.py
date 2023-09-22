@@ -17,89 +17,86 @@ from flask import url_for
   #   }
 
 class ScoutWeapons:
-
     def scattergun():
-        return {"name": "Scattergun", 'class': 'scout', 'type': 'Stock', 'image': '/w/images/thumb/1/1b/Item_icon_Scattergun.png/100px-Item_icon_Scattergun.png'}
+        return {"name": "scattergun", 'class': 'scout', 'type': 'Stock', 'image': 'localhost:5000/image/class_weapon/scout/scattergun'}
 
     def force_a_nature():
-        return {"name": "Force-A-Nature", 'class': 'scout', 'type': 'Unlock', 'image': '/w/images/thumb/e/ed/Item_icon_Force-A-Nature.png/100px-Item_icon_Force-A-Nature.png'}
+        return {"name": "force-A-Nature", 'class': 'scout', 'type': 'Unlock', 'image': 'localhost:5000/image/class_weapon/scout/force_a_nature'}
 
     def shortstop():
-        return {"name": "Shortstop", 'class': 'scout', 'type': 'Craft', 'image': '/w/images/thumb/8/84/Item_icon_Shortstop.png/100px-Item_icon_Shortstop.png'}
+        return {"name": "shortstop", 'class': 'scout', 'type': 'Craft', 'image': 'localhost:5000/image/class_weapon/scout/shortstop'}
 
     def soda_popper():
-        return {"name": "Soda Popper", 'class': 'scout', 'type': 'Craft', 'image': '/w/images/thumb/f/f1/Item_icon_Soda_Popper.png/100px-Item_icon_Soda_Popper.png'}
+        return {"name": "soda popper", 'class': 'scout', 'type': 'Craft', 'image': 'localhost:5000/image/class_weapon/scout/soda_popper'}
 
     def baby_faces_blaster():
-        return {"name": "Baby Face's Blaster", 'class': 'scout', 'type': 'Craft', 'image': '/w/images/thumb/e/e6/Item_icon_Baby_Face%27s_Blaster.png/100px-Item_icon_Baby_Face%27s_Blaster.png'}
+        return {"name": "baby face's blaster", 'class': 'scout', 'type': 'Craft', 'image': 'localhost:5000/image/class_weapon/scout/baby_faces_blaster'}
 
     def back_scatter():
-        return {"name": "Back Scatter", 'class': 'scout', 'type': 'Craft', 'image': '/w/images/thumb/1/11/Item_icon_Back_Scatter.png/100px-Item_icon_Back_Scatter.png'}
+        return {"name": "back scatter", 'class': 'scout', 'type': 'Craft', 'image': 'localhost:5000/image/class_weapon/scout/back_scatter'}
 
     def pistol():
-        return {"name": "Pistol", 'class': ['scout', 'engineer'], 'type': 'Stock', 'image': '/w/images/thumb/5/52/Item_icon_Pistol.png/100px-Item_icon_Pistol.png'}
+        return {"name": "pistol", 'class': ['scout', 'engineer'], 'type': 'Stock', 'image': 'localhost:5000/image/class_weapon/scout/pistol'}
 
     def lugermorph():
-        return {"name": "Lugermorph", 'class': ['scout', 'engineer'], 'type': 'Promotional', 'image': '/w/images/thumb/8/86/Item_icon_Lugermorph.png/100px-Item_icon_Lugermorph.png'}
+        return {"name": "lugermorph", 'class': ['scout', 'engineer'], 'type': 'Promotional', 'image': 'localhost:5000/image/class_weapon/scout/lugermorph'}
 
     def capper():
-        return {"name": "C.A.P.P.E.R", 'class': ['scout', 'engineer'], 'type': 'Uncrate', 'image': '/w/images/thumb/a/a6/Item_icon_C.A.P.P.E.R.png/100px-Item_icon_C.A.P.P.E.R.png'}
+        return {"name": "c.a.p.p.e.r", 'class': ['scout', 'engineer'], 'type': 'Uncrate', 'image': 'localhost:5000/image/class_weapon/scout/c.a.p.p.e.r'}
 
     def winger():
-        return {"name": "Winger", 'class': 'scout', 'type': 'Craft', 'image': '/w/images/thumb/4/4e/Item_icon_Winger.png/100px-Item_icon_Winger.png'}
+        return {"name": "winger", 'class': 'scout', 'type': 'Craft', 'image': 'localhost:5000/image/class_weapon/scout/winger'}
 
     def pretty_boys_pocket_pistol():
-        return {"name": "Pretty Boy's Pocket Pistol", 'class': 'scout', 'type': 'Craft', 'image': '/w/images/thumb/f/f6/Item_icon_Pretty_Boy%27s_Pocket_Pistol.png/100px-Item_icon_Pretty_Boy%27s_Pocket_Pistol.png'}
+        return {"name": "pretty boy's pocket pistol", 'class': 'scout', 'type': 'Craft', 'image': 'localhost:5000/image/class_weapon/scout/pretty_boys_pocket_pistol'}
 
     def flying_guillotine():
-        return {"name": "Flying Guillotine", 'class': 'scout', 'type': 'Promotional', 'image': '/w/images/thumb/5/5a/Item_icon_Flying_Guillotine.png/100px-Item_icon_Flying_Guillotine.png'}
+        return {"name": "flying guillotine", 'class': 'scout', 'type': 'Promotional', 'image': 'localhost:5000/image/class_weapon/scout/flying_guillotine'}
 
     def bonk_atomic_punch():
-        return {"name": "Bonk! Atomic Punch", 'class': 'scout', 'type': 'Unlock', 'image': '/w/images/thumb/8/8f/Item_icon_Bonk%21_Atomic_Punch.png/100px-Item_icon_Bonk%21_Atomic_Punch.png'}
+        return {"name": "bonk! atomic punch", 'class': 'scout', 'type': 'Unlock', 'image': 'localhost:5000/image/class_weapon/scout/bonk_atomic_punch'}
 
     def crit_a_cola():
-        return {"name": "Crit-a-Cola", 'class': 'scout', 'type': 'Craft', 'image': '/w/images/thumb/a/ae/Item_icon_Crit-a-Cola.png/100px-Item_icon_Crit-a-Cola.png'}
+        return {"name": "crit-a-cola", 'class': 'scout', 'type': 'Craft', 'image': 'localhost:5000/image/class_weapon/scout/crit_a_cola'}
 
     def mad_milk():
-        return {"name": "Mad Milk", 'class': 'scout', 'type': 'Craft', 'image': '/w/images/thumb/5/56/Item_icon_Mad_Milk.png/100px-Item_icon_Mad_Milk.png'}
+        return {"name": "mad milk", 'class': 'scout', 'type': 'Craft', 'image': 'localhost:5000/image/class_weapon/scout/mad_milk'}
 
     def mutated_milk():
-        return {"name": "Mutated Milk", 'class': 'scout', 'type': 'Uncrate', 'image': '/w/images/thumb/b/bd/Item_icon_Mutated_Milk.png/100px-Item_icon_Mutated_Milk.png'}
+        return {"name": "mutated milk", 'class': 'scout', 'type': 'Uncrate', 'image': 'localhost:5000/image/class_weapon/scout/mutated_milk'}
 
     def bat():
-        return {"name": "Bat", 'class': 'scout', 'type': 'Stock', 'image': '/w/images/thumb/b/b5/Item_icon_Bat.png/100px-Item_icon_Bat.png'}
+        return {"name": "bat", 'class': 'scout', 'type': 'Stock', 'image': 'localhost:5000/image/class_weapon/scout/bat'}
 
     def holy_mackerel():
-        return {"name": "Holy Mackerel", 'class': 'scout', 'type': 'Craft', 'image': '/w/images/thumb/8/86/Item_icon_Holy_Mackerel.png/100px-Item_icon_Holy_Mackerel.png'}
+        return {"name": "holy mackerel", 'class': 'scout', 'type': 'Craft', 'image': 'localhost:5000/image/class_weapon/scout/holy_mackerel'}
 
     def unarmed_combat():
-        return {"name": "Unarmed Combat", 'class': 'scout', 'type': 'Craft', 'image': '/w/images/thumb/9/96/Item_icon_Unarmed_Combat.png/100px-Item_icon_Unarmed_Combat.png'}
+        return {"name": "unarmed combat", 'class': 'scout', 'type': 'Craft', 'image': 'localhost:5000/image/class_weapon/scout/unarmed_combat'}
 
     def batsaber():
-        return {"name": "Batsaber", 'class': 'scout', 'type': 'Uncrate', 'image': '/w/images/thumb/e/ef/Item_icon_Batsaber.png/100px-Item_icon_Batsaber.png'}
+        return {"name": "batsaber", 'class': 'scout', 'type': 'Uncrate', 'image': 'localhost:5000/image/class_weapon/scout/batsaber'}
 
     def sandman():
-        return {"name": "Sandman", 'class': 'scout', 'type': 'Unlock', 'image': '/w/images/thumb/7/70/Item_icon_Sandman.png/100px-Item_icon_Sandman.png'}
+        return {"name": "sandman", 'class': 'scout', 'type': 'Unlock', 'image': 'localhost:5000/image/class_weapon/scout/sandman'}
 
     def candy_cane():
-        return {"name": "Candy Cane", 'class': 'scout', 'type': 'Craft', 'image': '/w/images/thumb/0/05/Item_icon_Candy_Cane.png/100px-Item_icon_Candy_Cane.png'}
+        return {"name": "candy cane", 'class': 'scout', 'type': 'Craft', 'image': 'localhost:5000/image/class_weapon/scout/candy_cane'}
 
     def boston_basher():
-        return {"name": "Boston Basher", 'class': 'scout', 'type': 'Craft', 'image': '/w/images/thumb/b/b5/Item_icon_Boston_Basher.png/100px-Item_icon_Boston_Basher.png'}
+        return {"name": "boston basher", 'class': 'scout', 'type': 'Craft', 'image': 'localhost:5000/image/class_weapon/scout/boston_basher'}
 
     def three_rune_blade():
-        return {"name": "Three-Rune Blade", 'class': 'scout', 'type': 'Promotional', 'image': '/w/images/thumb/f/f6/Item_icon_Three-Rune_Blade.png/100px-Item_icon_Three-Rune_Blade.png'}
+        return {"name": "three-rune blade", 'class': 'scout', 'type': 'Promotional', 'image': 'localhost:5000/image/class_weapon/scout/three_rune_blade'}
 
     def sun_on_a_stick():
-        return {"name": "Sun-on-a-Stick", 'class': 'scout', 'type': 'Promotional', 'image': '/w/images/thumb/0/06/Item_icon_Sun-on-a-Stick.png/100px-Item_icon_Sun-on-a-Stick.png'}
+        return {"name": "sun-on-a-stick", 'class': 'scout', 'type': 'Promotional', 'image': 'localhost:5000/image/class_weapon/scout/sun_on_a_stick'}
 
     def fan_owar():
-        return {"name": "Fan O'War", 'class': 'scout', 'type': 'Promotional', 'image': '/w/images/thumb/f/f4/Item_icon_Fan_O%27War.png/100px-Item_icon_Fan_O%27War.png'}
+        return {"name": "fan o'war", 'class': 'scout', 'type': 'Promotional', 'image': 'localhost:5000/image/class_weapon/scout/fan_owar'}
 
     def atomizer():
-        return {"name": "Atomizer", 'class': 'scout', 'type': 'Craft', 'image': '/w/images/thumb/2/29/Item_icon_Atomizer.png/100px-Item_icon_Atomizer.png'}
+        return {"name": "atomizer", 'class': 'scout', 'type': 'Craft', 'image': 'localhost:5000/image/class_weapon/scout/atomizer'}
 
     def wrap_assassin():
-        return {"name": "Wrap Assassin", 'class': 'scout', 'type': 'Craft', 'image': '/w/images/thumb/6/6b/Item_icon_Wrap_Assassin.png/100px-Item_icon_Wrap_Assassin.png'}
-
-        
+        return {"name": "wrap assassin", 'class': 'scout', 'type': 'Craft', 'image': 'localhost:5000/image/class_weapon/scout/wrap_assassin'}

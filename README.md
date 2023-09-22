@@ -4,7 +4,6 @@ just a fanmade api that returns weapons, class, cosmetics, and lore. images and 
 still working on it you know so
 
 ||||| stuff not added yet |||||
-
   character images
   character lore/info
   images for weapons
@@ -12,8 +11,8 @@ still working on it you know so
   documentation
 
 ||||| STUFF ADDED!!! |||||||
-  all class weapon data (still needs image data to not be weird)
-  
+  all class weapon data
+  routes for images YAY (most of the images still need to be added )
 
 |||| tech stack |||
 
