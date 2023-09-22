@@ -3,79 +3,79 @@ from flask import url_for
 class SoldierWeapons:
     
     def rocket_launcher():
-        return {"name": "Rocket Launcher", 'class': 'soldier', 'type': 'Stock', 'image': '/w/images/thumb/f/fe/Item_icon_Rocket_Launcher.png/100px-Item_icon_Rocket_Launcher.png'}
+        return {"name": "Rocket Launcher", 'class': 'soldier', 'type': 'Stock', 'image': 'localhost:5000/image/class_weapon/soldier/rocket_launcher'}
 
     def original():
-        return {"name": "Original", 'class': 'soldier', 'type': 'Promotional', 'image': '/w/images/thumb/8/88/Item_icon_Original.png/100px-Item_icon_Original.png'}
+        return {"name": "Original", 'class': 'soldier', 'type': 'Promotional', 'image': 'localhost:5000/image/class_weapon/soldier/original'}
 
     def direct_hit():
-        return {"name": "Direct Hit", 'class': 'soldier', 'type': 'Unlock', 'image': '/w/images/thumb/e/e7/Item_icon_Direct_Hit.png/100px-Item_icon_Direct_Hit.png'}
+        return {"name": "Direct Hit", 'class': 'soldier', 'type': 'Unlock', 'image': 'localhost:5000/image/class_weapon/soldier/direct_hit'}
 
     def black_box():
-        return {"name": "Black Box", 'class': 'soldier', 'type': 'Craft', 'image': '/w/images/thumb/d/d2/Item_icon_Black_Box.png/100px-Item_icon_Black_Box.png'}
+        return {"name": "Black Box", 'class': 'soldier', 'type': 'Craft', 'image': 'localhost:5000/image/class_weapon/soldier/black_box'}
 
     def rocket_jumper():
-        return {"name": "Rocket Jumper", 'class': 'soldier', 'type': 'Craft', 'image': '/w/images/thumb/5/53/Item_icon_Rocket_Jumper.png/100px-Item_icon_Rocket_Jumper.png'}
+        return {"name": "Rocket Jumper", 'class': 'soldier', 'type': 'Craft', 'image': 'localhost:5000/image/class_weapon/soldier/rocket_jumper'}
 
     def liberty_launcher():
-        return {"name": "Liberty Launcher", 'class': 'soldier', 'type': 'Craft', 'image': '/w/images/thumb/2/24/Item_icon_Liberty_Launcher.png/100px-Item_icon_Liberty_Launcher.png'}
+        return {"name": "Liberty Launcher", 'class': 'soldier', 'type': 'Craft', 'image': 'localhost:5000/image/class_weapon/soldier/liberty_launcher'}
 
     def cow_mangler_5000():
-        return {"name": "Cow Mangler 5000", 'class': 'soldier', 'type': 'Craft', 'image': '/w/images/thumb/4/46/Item_icon_Cow_Mangler_5000.png/100px-Item_icon_Cow_Mangler_5000.png'}
+        return {"name": "Cow Mangler 5000", 'class': 'soldier', 'type': 'Craft', 'image': 'localhost:5000/image/class_weapon/soldier/cow_mangler_5000'}
 
     def beggars_bazooka():
-        return {"name": "Beggar's Bazooka", 'class': 'soldier', 'type': 'Craft', 'image': '/w/images/thumb/7/77/Item_icon_Beggar%27s_Bazooka.png/100px-Item_icon_Beggar%27s_Bazooka.png'}
+        return {"name": "Beggar's Bazooka", 'class': 'soldier', 'type': 'Craft', 'image': 'localhost:5000/image/class_weapon/soldier/beggars_bazooka'}
 
     def air_strike():
-        return {"name": "Air Strike", 'class': 'soldier', 'type': 'Craft', 'image': '/w/images/thumb/f/f8/Item_icon_Air_Strike.png/100px-Item_icon_Air_Strike.png'}
+        return {"name": "Air Strike", 'class': 'soldier', 'type': 'Craft', 'image': 'localhost:5000/image/class_weapon/soldier/air_strike'}
 
     def shotgun():
-        return {"name": "Shotgun", 'class': ['soldier', 'pyro', 'heavy', 'engineer'], 'type': 'Stock', 'image': '/w/images/thumb/5/5f/Item_icon_Shotgun.png/100px-Item_icon_Shotgun.png'}
+        return {"name": "Shotgun", 'class': ['soldier', 'pyro', 'heavy', 'engineer'], 'type': 'Stock', 'image': 'localhost:5000/image/class_weapon/soldier/shotgun'}
 
     def reserve_shooter():
-        return {"name": "Reserve Shooter", 'class': ['soldier', 'pyro'], 'type': 'Craft', 'image': '/w/images/thumb/3/34/Item_icon_Reserve_Shooter.png/100px-Item_icon_Reserve_Shooter.png'}
+        return {"name": "Reserve Shooter", 'class': ['soldier', 'pyro'], 'type': 'Craft', 'image': 'localhost:5000/image/class_weapon/soldier/reserve_shooter'}
 
     def buff_banner():
-        return {"name": "Buff Banner", 'class': 'soldier', 'type': 'Unlock', 'image': '/w/images/thumb/7/7c/Item_icon_Buff_Banner.png/100px-Item_icon_Buff_Banner.png'}
+        return {"name": "Buff Banner", 'class': 'soldier', 'type': 'Unlock', 'image': 'localhost:5000/image/class_weapon/soldier/buff_banner'}
 
     def gunboats():
-        return {"name": "Gunboats", 'class': 'soldier', 'type': 'Craft', 'image': '/w/images/thumb/0/0c/Item_icon_Gunboats.png/100px-Item_icon_Gunboats.png'}
+        return {"name": "Gunboats", 'class': 'soldier', 'type': 'Craft', 'image': 'localhost:5000/image/class_weapon/soldier/gunboats'}
 
     def battalions_backup():
-        return {"name": "Battalion's Backup", 'class': 'soldier', 'type': 'Craft', 'image': '/w/images/thumb/d/d8/Item_icon_Battalion%27s_Backup.png/100px-Item_icon_Battalion%27s_Backup.png'}
+        return {"name": "Battalion's Backup", 'class': 'soldier', 'type': 'Craft', 'image': 'localhost:5000/image/class_weapon/soldier/battalions_backup'}
 
     def concheror():
-        return {"name": "Concheror", 'class': 'soldier', 'type': 'Promotional', 'image': '/w/images/thumb/7/7e/Item_icon_Concheror.png/100px-Item_icon_Concheror.png'}
+        return {"name": "Concheror", 'class': 'soldier', 'type': 'Promotional', 'image': 'localhost:5000/image/class_weapon/soldier/concheror'}
 
     def mantreads():
-        return {"name": "Mantreads", 'class': 'soldier', 'type': 'Craft', 'image': '/w/images/thumb/6/6a/Item_icon_Mantreads.png/100px-Item_icon_Mantreads.png'}
+        return {"name": "Mantreads", 'class': 'soldier', 'type': 'Craft', 'image': 'localhost:5000/image/class_weapon/soldier/mantreads'}
 
     def righteous_bison():
-        return {"name": "Righteous Bison", 'class': 'soldier', 'type': 'Promotional', 'image': '/w/images/thumb/1/1d/Item_icon_Righteous_Bison.png/100px-Item_icon_Righteous_Bison.png'}
+        return {"name": "Righteous Bison", 'class': 'soldier', 'type': 'Promotional', 'image': 'localhost:5000/image/class_weapon/soldier/righteous_bison'}
 
     def base_jumper():
-        return {"name": "B.A.S.E. Jumper", 'class': ['soldier', 'demoman'], 'type': 'Craft', 'image': '/w/images/thumb/b/b2/Item_icon_B.A.S.E._Jumper.png/100px-Item_icon_B.A.S.E._Jumper.png'}
+        return {"name": "B.A.S.E. Jumper", 'class': ['soldier', 'demoman'], 'type': 'Craft', 'image': 'localhost:5000/image/class_weapon/soldier/base_jumper'}
 
     def panic_attack():
-        return {"name": "Panic Attack", 'class': ['soldier', 'pyro', 'heavy', 'engineer'], 'type': 'Craft', 'image': '/w/images/thumb/b/be/Item_icon_Panic_Attack.png/100px-Item_icon_Panic_Attack.png'}
+        return {"name": "Panic Attack", 'class': ['soldier', 'pyro', 'heavy', 'engineer'], 'type': 'Craft', 'image': 'localhost:5000/image/class_weapon/soldier/panic_attack'}
 
     def shovel():
-        return {"name": "Shovel", 'class': 'soldier', 'type': 'Stock', 'image': '/w/images/thumb/7/73/Item_icon_Shovel.png/100px-Item_icon_Shovel.png'}
+        return {"name": "Shovel", 'class': 'soldier', 'type': 'Stock', 'image': 'localhost:5000/image/class_weapon/soldier/shovel'}
 
     def equalizer():
-        return {"name": "Equalizer", 'class': 'soldier', 'type': 'Unlock', 'image': '/w/images/thumb/b/ba/Item_icon_Equalizer.png/100px-Item_icon_Equalizer.png'}
+        return {"name": "Equalizer", 'class': 'soldier', 'type': 'Unlock', 'image': 'localhost:5000/image/class_weapon/soldier/equalizer'}
 
     def pain_train():
-        return {"name": "Pain Train", 'class': ['soldier', 'demoman'], 'type': 'Craft', 'image': '/w/images/thumb/4/4b/Item_icon_Pain_Train.png/100px-Item_icon_Pain_Train.png'}
+        return {"name": "Pain Train", 'class': ['soldier', 'demoman'], 'type': 'Craft', 'image': 'localhost:5000/image/class_weapon/soldier/pain_train'}
 
     def half_zatoichi():
-        return {"name": "Half-Zatoichi", 'class': ['soldier', 'demoman'], 'type': 'Promotional', 'image': '/w/images/thumb/a/a9/Item_icon_Half-Zatoichi.png/100px-Item_icon_Half-Zatoichi.png'}
+        return {"name": "Half-Zatoichi", 'class': ['soldier', 'demoman'], 'type': 'Promotional', 'image': 'localhost:5000/image/class_weapon/soldier/half_zatoichi'}
 
     def disciplinary_action():
-        return {"name": "Disciplinary Action", 'class': 'soldier', 'type': 'Craft', 'image': '/w/images/thumb/c/cf/Item_icon_Disciplinary_Action.png/100px-Item_icon_Disciplinary_Action.png'}
+        return {"name": "Disciplinary Action", 'class': 'soldier', 'type': 'Craft', 'image': 'localhost:5000/image/class_weapon/soldier/disciplinary_action'}
 
     def market_gardener():
-        return {"name": "Market Gardener", 'class': 'soldier', 'type': 'Craft', 'image': '/w/images/thumb/a/ac/Item_icon_Market_Gardener.png/100px-Item_icon_Market_Gardener.png'}
+        return {"name": "Market Gardener", 'class': 'soldier', 'type': 'Craft', 'image': 'localhost:5000/image/class_weapon/soldier/market_gardener'}
 
     def escape_plan():
-        return {"name": "Escape Plan", 'class': 'soldier', 'type': 'Craft', 'image': '/w/images/thumb/0/0c/Item_icon_Escape_Plan.png/100px-Item_icon_Escape_Plan.png'}
+        return {"name": "Escape Plan", 'class': 'soldier', 'type': 'Craft', 'image': 'localhost:5000/image/class_weapon/soldier/escape_plan'}
