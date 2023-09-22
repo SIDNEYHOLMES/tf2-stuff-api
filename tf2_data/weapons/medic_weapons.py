@@ -1,42 +1,39 @@
-from flask import url_for
-
 class MedicWeapons:
-  
-  def syringe_gun():
-      return {"name": "Syringe Gun", 'class': 'medic', 'type': 'Stock', 'image': '/w/images/thumb/c/c4/Item_icon_Syringe_Gun.png/100px-Item_icon_Syringe_Gun.png'}
+    def syringe_gun():
+        return {"name": "Syringe Gun", 'class': 'medic', 'type': 'Stock', 'image': 'localhost:5000/image/class_weapon/medic/syringe_gun'}
 
-  def blutsauger():
-      return {"name": "Blutsauger", 'class': 'medic', 'type': 'Unlock', 'image': '/w/images/thumb/1/13/Item_icon_Blutsauger.png/100px-Item_icon_Blutsauger.png'}
+    def blutsauger():
+        return {"name": "Blutsauger", 'class': 'medic', 'type': 'Unlock', 'image': 'localhost:5000/image/class_weapon/medic/blutsauger'}
 
-  def crusaders_crossbow():
-      return {"name": "Crusader's Crossbow", 'class': 'medic', 'type': 'Craft', 'image': '/w/images/thumb/9/9c/Item_icon_Crusader%27s_Crossbow.png/100px-Item_icon_Crusader%27s_Crossbow.png'}
+    def crusaders_crossbow():
+        return {"name": "Crusader's Crossbow", 'class': 'medic', 'type': 'Craft', 'image': 'localhost:5000/image/class_weapon/medic/crusaders_crossbow'}
 
-  def overdose():
-      return {"name": "Overdose", 'class': 'medic', 'type': 'Craft', 'image': '/w/images/thumb/f/fe/Item_icon_Overdose.png/100px-Item_icon_Overdose.png'}
+    def overdose():
+        return {"name": "Overdose", 'class': 'medic', 'type': 'Craft', 'image': 'localhost:5000/image/class_weapon/medic/overdose'}
 
-  def medi_gun():
-      return {"name": "Medi Gun", 'class': 'medic', 'type': 'Stock', 'image': '/w/images/thumb/4/4a/Item_icon_Medi_Gun.png/100px-Item_icon_Medi_Gun.png'}
+    def medi_gun():
+        return {"name": "Medi Gun", 'class': 'medic', 'type': 'Stock', 'image': 'localhost:5000/image/class_weapon/medic/medi_gun'}
 
-  def kritzkrieg():
-      return {"name": "Kritzkrieg", 'class': 'medic', 'type': 'Unlock', 'image': '/w/images/thumb/8/85/Item_icon_Kritzkrieg.png/100px-Item_icon_Kritzkrieg.png'}
+    def kritzkrieg():
+        return {"name": "Kritzkrieg", 'class': 'medic', 'type': 'Unlock', 'image': 'localhost:5000/image/class_weapon/medic/kritzkrieg'}
 
-  def quick_fix():
-      return {"name": "Quick-Fix", 'class': 'medic', 'type': 'Craft', 'image': '/w/images/thumb/5/50/Item_icon_Quick-Fix.png/100px-Item_icon_Quick-Fix.png'}
+    def quick_fix():
+        return {"name": "Quick-Fix", 'class': 'medic', 'type': 'Craft', 'image': 'localhost:5000/image/class_weapon/medic/quick_fix'}
 
-  def vaccinator():
-      return {"name": "Vaccinator", 'class': 'medic', 'type': 'Craft', 'image': '/w/images/thumb/9/9d/Item_icon_Vaccinator.png/100px-Item_icon_Vaccinator.png'}
+    def vaccinator():
+        return {"name": "Vaccinator", 'class': 'medic', 'type': 'Craft', 'image': 'localhost:5000/image/class_weapon/medic/vaccinator'}
 
-  def bonesaw():
-      return {"name": "Bonesaw", 'class': 'medic', 'type': 'Stock', 'image': '/w/images/thumb/8/8d/Item_icon_Bonesaw.png/100px-Item_icon_Bonesaw.png'}
+    def bonesaw():
+        return {"name": "Bonesaw", 'class': 'medic', 'type': 'Stock', 'image': 'localhost:5000/image/class_weapon/medic/bonesaw'}
 
-  def ubersaw():
-      return {"name": "Ubersaw", 'class': 'medic', 'type': 'Unlock', 'image': '/w/images/thumb/0/04/Item_icon_Ubersaw.png/100px-Item_icon_Ubersaw.png'}
+    def ubersaw():
+        return {"name": "Ubersaw", 'class': 'medic', 'type': 'Unlock', 'image': 'localhost:5000/image/class_weapon/medic/ubersaw'}
 
-  def vita_saw():
-      return {"name": "Vita-Saw", 'class': 'medic', 'type': 'Craft', 'image': '/w/images/thumb/7/70/Item_icon_Vita-Saw.png/100px-Item_icon_Vita-Saw.png'}
+    def vita_saw():
+        return {"name": "Vita-Saw", 'class': 'medic', 'type': 'Craft', 'image': 'localhost:5000/image/class_weapon/medic/vita_saw'}
 
-  def amputator():
-      return {"name": "Amputator", 'class': 'medic', 'type': 'Craft', 'image': '/w/images/thumb/a/ab/Item_icon_Amputator.png/100px-Item_icon_Amputator.png'}
+    def amputator():
+        return {"name": "Amputator", 'class': 'medic', 'type': 'Craft', 'image': 'localhost:5000/image/class_weapon/medic/amputator'}
 
-  def solemn_vow():
-      return {"name": "Solemn Vow", 'class': 'medic', 'type': 'Craft', 'image': '/w/images/thumb/d/db/Item_icon_Solemn_Vow.png/100px-Item_icon_Solemn_Vow.png'}
+    def solemn_vow():
+        return {"name": "Solemn Vow", 'class': 'medic', 'type': 'Craft', 'image': 'localhost:5000/image/class_weapon/medic/solemn_vow'}

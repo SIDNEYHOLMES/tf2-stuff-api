@@ -1,87 +1,88 @@
 from flask import url_for
 
 class PyroWeapons:
-  
+
     def flame_thrower():
-        return {"name": "Flame_Thrower", 'class': 'pyro', 'type': 'Stock', 'image': '/w/images/thumb/e/ec/Item_icon_Flame_Thrower.png/100px-Item_icon_Flame_Thrower.png'}
+        return {"name": "Flame_Thrower", 'class': 'pyro', 'type': 'Stock', 'image': 'localhost:5000/image/class_weapon/pyro/flame_thrower'}
 
     def rainblower():
-        return {"name": "Rainblower", 'class': 'pyro', 'type': 'Craft', 'image': '/w/images/thumb/3/3c/Item_icon_Rainblower.png/100px-Item_icon_Rainblower.png'}
+        return {"name": "Rainblower", 'class': 'pyro', 'type': 'Craft', 'image': 'localhost:5000/image/class_weapon/pyro/rainblower'}
 
     def nostromo_napalmer():
-        return {"name": "Nostromo Napalmer", 'class': 'pyro', 'type': 'Promotional', 'image': '/w/images/thumb/d/d3/Item_icon_Nostromo_Napalmer.png/100px-Item_icon_Nostromo_Napalmer.png'}
+        return {"name": "Nostromo Napalmer", 'class': 'pyro', 'type': 'Promotional', 'image': 'localhost:5000/image/class_weapon/pyro/nostromo_napalmer'}
 
     def backburner():
-        return {"name": "Backburner", 'class': 'pyro', 'type': 'Unlock', 'image': '/w/images/thumb/5/5d/Item_icon_Backburner.png/100px-Item_icon_Backburner.png'}
+        return {"name": "Backburner", 'class': 'pyro', 'type': 'Unlock', 'image': 'localhost:5000/image/class_weapon/pyro/backburner'}
 
     def degreaser():
-        return {"name": "Degreaser", 'class': 'pyro', 'type': 'Craft', 'image': '/w/images/thumb/9/94/Item_icon_Degreaser.png/100px-Item_icon_Degreaser.png'}
+        return {"name": "Degreaser", 'class': 'pyro', 'type': 'Craft', 'image': 'localhost:5000/image/class_weapon/pyro/degreaser'}
 
     def phlogistinator():
-        return {"name": "Phlogistinator", 'class': 'pyro', 'type': 'Craft', 'image': '/w/images/thumb/2/22/Item_icon_Phlogistinator.png/100px-Item_icon_Phlogistinator.png'}
+        return {"name": "Phlogistinator", 'class': 'pyro', 'type': 'Craft', 'image': 'localhost:5000/image/class_weapon/pyro/phlogistinator'}
 
     def dragons_fury():
-        return {"name": "Dragon's Fury", 'class': 'pyro', 'type': 'Contract', 'image': '/w/images/thumb/1/1f/Item_icon_Dragon%27s_Fury.png/100px-Item_icon_Dragon%27s_Fury.png'}
+        return {"name": "Dragon's Fury", 'class': 'pyro', 'type': 'Contract', 'image': 'localhost:5000/image/class_weapon/pyro/dragons_fury'}
 
     def shotgun():
-        return {"name": "Shotgun", 'class': ['soldier', 'pyro', 'heavy', 'engineer'], 'type': 'Stock', 'image': '/w/images/thumb/5/5f/Item_icon_Shotgun.png/100px-Item_icon_Shotgun.png'}
+        return {"name": "Shotgun", 'class': ['soldier', 'pyro', 'heavy', 'engineer'], 'type': 'Stock', 'image': 'localhost:5000/image/class_weapon/soldier/shotgun'}
 
     def reserve_shooter():
-        return {"name": "Reserve Shooter", 'class': ['soldier', 'pyro'], 'type': 'Craft', 'image': '/w/images/thumb/3/34/Item_icon_Reserve_Shooter.png/100px-Item_icon_Reserve_Shooter.png'}
+        return {"name": "Reserve Shooter", 'class': ['soldier', 'pyro'], 'type': 'Craft', 'image': 'localhost:5000/image/class_weapon/soldier/reserve_shooter'}
 
     def flare_gun():
-        return {"name": "Flare Gun", 'class': 'pyro', 'type': 'Unlock', 'image': '/w/images/thumb/7/7b/Item_icon_Flare_Gun.png/100px-Item_icon_Flare_Gun.png'}
+        return {"name": "Flare Gun", 'class': 'pyro', 'type': 'Unlock', 'image': 'localhost:5000/image/class_weapon/pyro/flare_gun'}
 
     def detonator():
-        return {"name": "Detonator", 'class': 'pyro', 'type': 'Craft', 'image': '/w/images/thumb/5/53/Item_icon_Detonator.png/100px-Item_icon_Detonator.png'}
+        return {"name": "Detonator", 'class': 'pyro', 'type': 'Craft', 'image': 'localhost:5000/image/class_weapon/pyro/detonator'}
 
     def manmelter():
-        return {"name": "Manmelter", 'class': 'pyro', 'type': 'Craft', 'image': '/w/images/thumb/9/9d/Item_icon_Manmelter.png/100px-Item_icon_Manmelter.png'}
+        return {"name": "Manmelter", 'class': 'pyro', 'type': 'Craft', 'image': 'localhost:5000/image/class_weapon/pyro/manmelter'}
 
     def scorch_shot():
-        return {"name": "Scorch Shot", 'class': 'pyro', 'type': 'Craft', 'image': '/w/images/thumb/b/be/Item_icon_Scorch_Shot.png/100px-Item_icon_Scorch_Shot.png'}
+        return {"name": "Scorch Shot", 'class': 'pyro', 'type': 'Craft', 'image': 'localhost:5000/image/class_weapon/pyro/scorch_shot'}
 
     def panic_attack():
-        return {"name": "Panic Attack", 'class': ['soldier', 'pyro', 'heavy', 'engineer'], 'type': 'Craft', 'image': '/w/images/thumb/b/be/Item_icon_Panic_Attack.png/100px-Item_icon_Panic_Attack.png'}
+        return {"name": "Panic Attack", 'class': ['soldier', 'pyro', 'heavy', 'engineer'], 'type': 'Craft', 'image': 'localhost:5000/image/class_weapon/soldier/panic_attack'}
 
     def thermal_thruster():
-        return {"name": "Thermal Thruster", 'class': 'pyro', 'type': 'Contract', 'image': '/w/images/thumb/0/00/Item_icon_Thermal_Thruster.png/100px-Item_icon_Thermal_Thruster.png'}
+        return {"name": "Thermal Thruster", 'class': 'pyro', 'type': 'Contract', 'image': 'localhost:5000/image/class_weapon/pyro/thermal_thruster'}
 
     def gas_passer():
-        return {"name": "Gas Passer", 'class': 'pyro', 'type': 'Contract', 'image': '/w/images/thumb/0/0e/Item_icon_Gas_Passer.png/100px-Item_icon_Gas_Passer.png'}
+        return {"name": "Gas Passer", 'class': 'pyro', 'type': 'Contract', 'image': 'localhost:5000/image/class_weapon/pyro/gas_passer'}
 
     def fire_axe():
-        return {"name": "Fire Axe", 'class': 'pyro', 'type': 'Stock', 'image': '/w/images/thumb/9/9f/Item_icon_Fire_Axe.png/100px-Item_icon_Fire_Axe.png'}
+        return {"name": "Fire Axe", 'class': 'pyro', 'type': 'Stock', 'image': 'localhost:5000/image/class_weapon/pyro/fire_axe'}
 
     def lollichop():
-        return {"name": "Lollichop", 'class': 'pyro', 'type': 'Craft', 'image': '/w/images/thumb/6/65/Item_icon_Lollichop.png/100px-Item_icon_Lollichop.png'}
+        return {"name": "Lollichop", 'class': 'pyro', 'type': 'Craft', 'image': 'localhost:5000/image/class_weapon/pyro/lollichop'}
 
     def axtinguisher():
-        return {"name": "Axtinguisher", 'class': 'pyro', 'type': 'Unlock', 'image': '/w/images/thumb/c/c9/Item_icon_Axtinguisher.png/100px-Item_icon_Axtinguisher.png'}
+        return {"name": "Axtinguisher", 'class': 'pyro', 'type': 'Unlock', 'image': 'localhost:5000/image/class_weapon/pyro/axtinguisher'}
 
     def postal_pummeler():
-        return {"name": "Postal Pummeler", 'class': 'pyro', 'type': 'Craft', 'image': '/w/images/thumb/2/2d/Item_icon_Postal_Pummeler.png/100px-Item_icon_Postal_Pummeler.png'}
+        return {"name": "Postal Pummeler", 'class': 'pyro', 'type': 'Craft', 'image': 'localhost:5000/image/class_weapon/pyro/postal_pummeler'}
 
     def homewrecker():
-        return {"name": "Homewrecker", 'class': 'pyro', 'type': 'Craft', 'image': '/w/images/thumb/4/4a/Item_icon_Homewrecker.png/100px-Item_icon_Homewrecker.png'}
+        return {"name": "Homewrecker", 'class': 'pyro', 'type': 'Craft', 'image': 'localhost:5000/image/class_weapon/pyro/homewrecker'}
 
     def maul():
-        return {"name": "Maul", 'class': 'pyro', 'type': 'Promotional', 'image': '/w/images/thumb/2/2e/Item_icon_Maul.png/100px-Item_icon_Maul.png'}
+        return {"name": "Maul", 'class': 'pyro', 'type': 'Promotional', 'image': 'localhost:5000/image/class_weapon/pyro/maul'}
 
     def powerjack():
-        return {"name": "Powerjack", 'class': 'pyro', 'type': 'Craft', 'image': '/w/images/thumb/c/cf/Item_icon_Powerjack.png/100px-Item_icon_Powerjack.png'}
+        return {"name": "Powerjack", 'class': 'pyro', 'type': 'Craft', 'image': 'localhost:5000/image/class_weapon/pyro/powerjack'}
 
     def back_scratcher():
-        return {"name": "Back Scratcher", 'class': 'pyro', 'type': 'Craft', 'image': '/w/images/thumb/4/48/Item_icon_Back_Scratcher.png/100px-Item_icon_Back_Scratcher.png'}
+        return {"name": "Back Scratcher", 'class': 'pyro', 'type': 'Craft', 'image': 'localhost:5000/image/class_weapon/pyro/back_scratcher'}
 
     def sharpened_volcano_fragment():
-        return {"name": "Sharpened Volcano Fragment", 'class': 'pyro', 'type': 'Promotional', 'image': '/w/images/thumb/a/ac/Item_icon_Sharpened_Volcano_Fragment.png/100px-Item_icon_Sharpened_Volcano_Fragment.png'}
+        return {"name": "Sharpened Volcano Fragment", 'class': 'pyro', 'type': 'Promotional', 'image': 'localhost:5000/image/class_weapon/pyro/sharpened_volcano_fragment'}
 
     def third_degree():
-        return {"name": "Third Degree", 'class': 'pyro', 'type': 'Craft', 'image': '/w/images/thumb/9/91/Item_icon_Third_Degree.png/100px-Item_icon_Third_Degree.png'}
+        return {"name": "Third Degree", 'class': 'pyro', 'type': 'Craft', 'image': 'localhost:5000/image/class_weapon/pyro/third_degree'}
 
     def neon_annihilator():
-        return {"name": "Neon Annihilator", 'class': 'pyro', 'type': 'Promotional', 'image': '/w/images/thumb/e/e9/Item_icon_Neon_Annihilator.png/100px-Item_icon_Neon_Annihilator.png'}
+        return {"name": "Neon Annihilator", 'class': 'pyro', 'type': 'Promotional', 'image': 'localhost:5000/image/class_weapon/pyro/neon_annihilator'}
 
     def hot_hand():
-        return {"name": "Hot Hand", 'class': 'pyro', 'type': 'Contract', 'image': '/w/images/thumb/f/f6/Item_icon_Hot_Hand.png/100px-Item_icon_Hot_Hand.png'}
+        return {"name": "Hot Hand", 'class': 'pyro', 'type': 'Contract', 'image': 'localhost:5000/image/class_weapon/pyro/hot_hand'}
+
