@@ -14,13 +14,17 @@ weapon_img_path = os.path.join(absolute_path, 'imgs/weapons/', test_img_path)
 ## ||||||||||| WEAPONS ||||||||||||||
 @app.route('/weapon/<class_name>/<weapon_name>', methods=['GET']) ## ROUTE FOR INPUTTED CLASS WEAPONS (DYNAMIC)
 def get_weapon(weapon_name, class_name): ## takes weapon name and class name from route and checks corrisponding module for a match
+    if (weapon_name == 'all'):
+        return make_response(jsonify({'data': ALL_WEAPON_CLASSES[weapon_name]}))
+    
     weapon_method = getattr(ALL_WEAPON_CLASSES[class_name], weapon_name, None) ## retrieves weapon module
     
     if weapon_method and callable(weapon_method): ## if inputted name is same as class method, return weapon data
         weapon_data = weapon_method()
-        return make_response(jsonify({'weapon': weapon_data}), 200)
+        return make_response(jsonify({'data': weapon_data}), 200)
     else: ## failed, weapon dosent exsist (or mispelled)
         return make_response(jsonify({'error': 'Weapon or class not found (check route spelling)'}), 404)
+    
     
 ## ||||||||||| LORE ||||||||||||||
 

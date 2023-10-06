@@ -10,6 +10,8 @@ from .sniper_weapons import SniperWeapons
 from .spy_weapons import SpyWeapons
 from .global_weapons import GlobalWeapons
 
+def allWeapons():
+  return [ScoutWeapons, SoldierWeapons, PyroWeapons, DemomanWeapons, HeavyWeapons, EngineerWeapons, ]
 
 ALL_WEAPON_CLASSES = {
   "scout": ScoutWeapons,
@@ -21,5 +23,6 @@ ALL_WEAPON_CLASSES = {
   "medic": MedicWeapons,
   "sniper": SniperWeapons,
   "spy": SpyWeapons,
-  "global": GlobalWeapons
+  "global": GlobalWeapons,
+  "all": allWeapons()
   }
