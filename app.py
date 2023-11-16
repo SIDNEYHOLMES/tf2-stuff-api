@@ -16,12 +16,12 @@ weapon_img_path = os.path.join(absolute_path, 'imgs/weapons/', test_img_path)
 @app.route('/weapon/<class_name>/<weapon_name>', methods=['GET']) ## ROUTE FOR INPUTTED CLASS WEAPONS (DYNAMIC)
 def get_weapon(weapon_name, class_name): ## takes weapon name and class name from route and checks corrisponding module for a match
     if (weapon_name == 'all'): # if the weapon name is all, return all weapon data for that class
-        result_list = []
+        result_dict = {}
         public_method_names = [method for method in dir(ALL_WEAPON_CLASSES[class_name]) if callable(getattr(ALL_WEAPON_CLASSES[class_name], method)) if not method.startswith('_')]
         for method in public_method_names:
-            result_list.append(getattr(ALL_WEAPON_CLASSES[class_name], method)())  # call
+            result_dict.update({method: getattr(ALL_WEAPON_CLASSES[class_name], method)()})  # call
         
-        return make_response(jsonify({'data': result_list}), 200)
+        return make_response(jsonify({'data': result_dict}), 200)
     
     weapon_method = getattr(ALL_WEAPON_CLASSES[class_name], weapon_name, None) ## retrieves weapon module
     
