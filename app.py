@@ -13,23 +13,30 @@ weapon_img_path = os.path.join(absolute_path, 'imgs/weapons/', test_img_path)
 
 ## ||||||||||| WEAPONS ||||||||||||||
 
-@app.route('/weapon/<class_name>/<weapon_name>', methods=['GET']) ## ROUTE FOR INPUTTED CLASS WEAPONS (DYNAMIC)
-def get_weapon(weapon_name, class_name): ## takes weapon name and class name from route and checks corrisponding module for a match
-    if (weapon_name == 'all'): # if the weapon name is all, return all weapon data for that class
-        result_dict = {}
-        public_method_names = [method for method in dir(ALL_WEAPON_CLASSES[class_name]) if callable(getattr(ALL_WEAPON_CLASSES[class_name], method)) if not method.startswith('_')]
-        for weapon_method in public_method_names:
-            result_dict.update({weapon_method: getattr(ALL_WEAPON_CLASSES[class_name], weapon_method)()})  # call
+@app.route('/weapon/<class_name>/<weapon_name>', methods=['GET']) ## ROUTE FOR INPUTTED CLASS WEAPONS
+## takes weapon name and class name from route and checks corrisponding module for a match
+def get_weapon(weapon_name, class_name): 
+    if (weapon_name == 'all'): # if input is all
+        if class_name in ALL_WEAPON_CLASSES: ## if the class exsists in the module 
+            result_dict = {} # result dictionary to be returned
+            class_model = ALL_WEAPON_CLASSES[class_name] # retrieves the model of the inputted class
+            #retrieves public classes from moduel. (all of the weapon functions from the class)
+            public_method_names = [method for method in dir(class_model) if callable(getattr(class_model, method)) if not method.startswith('_')]
+            for weapon_method in public_method_names: # each weapon method returns its data to the result dictionary
+                result_dict[weapon_method] = getattr(class_model, weapon_method)()  
+            
+            return make_response(jsonify({'data': result_dict}), 200)
+        else:
+            return make_response(jsonify({'error': 'Class not found (check route spelling)'}), 404)
         
-        return make_response(jsonify({'data': result_dict}), 200)
-    
+        
+    # otherwise the weapon name is specified
     weapon_method = getattr(ALL_WEAPON_CLASSES[class_name], weapon_name, None) ## retrieves weapon module
-    
     if weapon_method and callable(weapon_method): ## if inputted name is same as class method, return weapon data
         weapon_data = weapon_method()
         return make_response(jsonify({'data': weapon_data}), 200)
     else: ## failed, weapon dosent exsist (or mispelled)
-        return make_response(jsonify({'error': 'Weapon or class not found (check route spelling)'}), 404)
+        return make_response(jsonify({'error': 'Weapon or lass not found (check route spelling)'}), 404)
     
     
 ## ||||||||||| LORE ||||||||||||||
