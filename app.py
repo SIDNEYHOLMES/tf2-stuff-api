@@ -18,8 +18,8 @@ def get_weapon(weapon_name, class_name): ## takes weapon name and class name fro
     if (weapon_name == 'all'): # if the weapon name is all, return all weapon data for that class
         result_dict = {}
         public_method_names = [method for method in dir(ALL_WEAPON_CLASSES[class_name]) if callable(getattr(ALL_WEAPON_CLASSES[class_name], method)) if not method.startswith('_')]
-        for method in public_method_names:
-            result_dict.update({method: getattr(ALL_WEAPON_CLASSES[class_name], method)()})  # call
+        for weapon_method in public_method_names:
+            result_dict.update({weapon_method: getattr(ALL_WEAPON_CLASSES[class_name], weapon_method)()})  # call
         
         return make_response(jsonify({'data': result_dict}), 200)
     

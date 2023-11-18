@@ -1,21 +1,3 @@
-from flask import url_for
-
-## CONTAINES ALL SCOUT WEAPONS 
-
-# TODO
-# All weapon classes need to be added
-# Weapon images need to be in the folder and corrisponding url (instead of default from wiki)
-
-# EXAMPLE  |||||||||||||||||||
- 
-  # def bat():
-  #   return {
-  #     'name': 'bat',
-  #     'class': 'scout',
-  #     'type': 'stock',
-  #     'image': url_for('static', filename='scout_images/default_bat.png')
-  #   }
-
 class ScoutWeapons:
     def scattergun():
         return {"name": "scattergun", 'class': 'scout', 'type': 'Stock', 'image': 'localhost:5000/image/class_weapon/scout/scattergun'}

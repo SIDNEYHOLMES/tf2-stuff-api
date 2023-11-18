@@ -13,16 +13,6 @@ from .spy_weapons import SpyWeapons
 from .global_weapons import GlobalWeapons
 
 ## all weapons iterates through weapon models and adds each return to the result list
-def allWeapons():
-  weapon_method_list = [ScoutWeapons, SoldierWeapons, PyroWeapons, DemomanWeapons, HeavyWeapons, EngineerWeapons, MedicWeapons, SniperWeapons, SpyWeapons, GlobalWeapons]
-  result_method_list = []
-  while (len(result_method_list) < 10):
-    curr_weapon = weapon_method_list[len(result_method_list)]
-    result_method_list.append(curr_weapon)
-  
-  # print(result_method_list)
-  return result_method_list
-
 ALL_WEAPON_CLASSES = {
   "scout": ScoutWeapons,
   "soldier": SoldierWeapons,
@@ -34,5 +24,9 @@ ALL_WEAPON_CLASSES = {
   "sniper": SniperWeapons,
   "spy": SpyWeapons,
   "global": GlobalWeapons,
-  "all": allWeapons()
   }
+
+def allWeapons():
+    return list(ALL_WEAPON_CLASSES.keys())
+
+ALL_WEAPON_CLASSES["all"] = allWeapons()

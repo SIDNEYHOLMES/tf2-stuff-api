@@ -1,5 +1,3 @@
-from flask import url_for
-
 class SoldierWeapons:
     
     def rocket_launcher():
