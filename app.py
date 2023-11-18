@@ -1,10 +1,14 @@
 from flask import Flask, jsonify, send_file, make_response
+from flask_caching import Cache
 import os
 
 ## object containing all weapon classes with the keys being the class name
 from tf2_data.weapons import ALL_WEAPON_CLASSES 
 
 app = Flask(__name__)
+cache = Cache(app)
+
+app.config['CACHE_TYPE'] = 'simple'
 
 absolute_path = os.path.dirname(__file__)
 test_img_path = 'testimg1.PNG'
@@ -14,16 +18,17 @@ weapon_img_path = os.path.join(absolute_path, 'imgs/weapons/', test_img_path)
 ## ||||||||||| WEAPONS ||||||||||||||
 
 @app.route('/weapon/<class_name>/<weapon_name>', methods=['GET']) ## ROUTE FOR INPUTTED CLASS WEAPONS
+@cache.cached(timeout=300, key_prefix='weapon_cache')
 ## takes weapon name and class name from route and checks corrisponding module for a match
 def get_weapon(weapon_name, class_name): 
     if (weapon_name == 'all'): # if input is all
         if class_name in ALL_WEAPON_CLASSES: ## if the class exsists in the module 
             result_dict = {} # result dictionary to be returned
-            class_model = ALL_WEAPON_CLASSES[class_name] # retrieves the model of the inputted class
+            weapon_class = ALL_WEAPON_CLASSES[class_name] # retrieves the model of the inputted class
             #retrieves public classes from moduel. (all of the weapon functions from the class)
-            public_method_names = [method for method in dir(class_model) if callable(getattr(class_model, method)) if not method.startswith('_')]
+            public_method_names = [method for method in dir(weapon_class) if callable(getattr(weapon_class, method)) if not method.startswith('_')]
             for weapon_method in public_method_names: # each weapon method returns its data to the result dictionary
-                result_dict[weapon_method] = getattr(class_model, weapon_method)()  
+                result_dict[weapon_method] = getattr(weapon_class, weapon_method)()  
             
             return make_response(jsonify({'data': result_dict}), 200)
         else:
