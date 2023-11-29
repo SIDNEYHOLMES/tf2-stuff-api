@@ -1,5 +1,3 @@
-from flask import url_for
-
 class DemomanWeapons:
     
     def grenade_launcher():

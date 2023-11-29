@@ -6,19 +6,22 @@ import os
 from tf2_data.weapons import ALL_WEAPON_CLASSES 
 
 app = Flask(__name__)
-cache = Cache(app)
-
 app.config['CACHE_TYPE'] = 'simple'
+cache = Cache(app)
 
 absolute_path = os.path.dirname(__file__)
 test_img_path = 'testimg1.PNG'
 weapon_img_path = os.path.join(absolute_path, 'imgs/weapons/', test_img_path)
 
+## clear cache (for debugging)
+
+@app.route('/clearcache', methods=['POST'])
+def clear_cache():
+    cache.clear()
+    return 'CLEARD'
 
 ## ||||||||||| WEAPONS ||||||||||||||
-
 @app.route('/weapon/<class_name>/<weapon_name>', methods=['GET']) ## ROUTE FOR INPUTTED CLASS WEAPONS
-@cache.cached(timeout=300, key_prefix='weapon_cache')
 ## takes weapon name and class name from route and checks corrisponding module for a match
 def get_weapon(weapon_name, class_name): 
     if (weapon_name == 'all'): # if input is all
@@ -65,7 +68,6 @@ def get_weapon(weapon_name, class_name):
 @app.route('/image/class_weapon/<class_name>/<weapon_name>', methods=['GET'])
 def serve_weapon_image(class_name, weapon_name):
     weapon_img_path = os.path.join(absolute_path, 'static/weapons', class_name + '_images' , weapon_name +'.png') ## path of weapon image
-    
     if os.path.exists(weapon_img_path): ## if a image is located at path
         return make_response(send_file(weapon_img_path, mimetype='image/png'), 200)
     else:

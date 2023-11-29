@@ -1,7 +1,4 @@
-from flask import url_for
-
 class PyroWeapons:
-
     def flame_thrower():
         return {"name": "Flame_Thrower", 'class': 'pyro', 'type': 'Stock', 'image': 'localhost:5000/image/class_weapon/pyro/flame_thrower'}
 
